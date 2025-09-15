@@ -1,3 +1,4 @@
+
 # NBA_ComposicionCorporal_Rendimiento
 Proyecto Final de Data Analytics - Análisis de cómo la composición corporal influye en el rendimiento de jugadores de la NBA.
 
@@ -25,3 +26,7 @@ El objetivo es analizar cómo la **composición corporal** influye en el **rendi
 2. Notebooks en Python con limpieza y análisis.  
 3. Dashboard en Power BI.  
 4. Documentación del proyecto.  
+=======
+# NBA_Rendimiento_ComposicionCorporal
+Análisis del rendimiento, composición corporal y lesiones en jugadores de la NBA. Proyecto colaborativo LEG Analytics.
+>>>>>>> 4f11e9c852d956963e902d7172ca545a2b4a0a6b
