@@ -6,8 +6,8 @@
 *.log
 
 # Datos crudos pesados (sube solo ejemplos chicos)
-data_raw/*
-!data_raw/ejemplo_muestra.csv
+# data_raw/*
+# !data_raw/ejemplo_muestra.csv
 
 # Archivos del sistema
 .DS_Store
