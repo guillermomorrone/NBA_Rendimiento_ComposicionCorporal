@@ -1,0 +1,47 @@
+team_id,team_name,team_abbreviation,team_code,team_city
+0,Unknown Team,UNK,UNK,Unknown
+1610610023,Packers,AND,packers,Anderson
+1610610024,Bullets,BAL,bullets,Baltimore
+1610610025,Stags,CHS,stags,Chicago
+1610610026,Rebels,CLR,rebels,Cleveland
+1610610027,Nuggets,DN,nuggets,Denver
+1610610028,Falcons,DEF,falcons,Detroit
+1610610029,Jets,JET,jets,Indianapolis
+1610610030,Olympians,INO,olympians,Indianapolis
+1610610031,Ironmen,PIT,ironmen,Pittsburgh
+1610610032,Steamrollers,PRO,steamrollers,Providence
+1610610033,Redskins,SHE,redskins,Sheboygan
+1610610034,Bombers,BOM,bombers,St. Louis
+1610610035,Huskies,HUS,huskies,Toronto
+1610610036,Capitols,WAS,capitols,Washington
+1610610037,Hawks,WAT,hawks,Waterloo
+1610612737,Blackhawks,ATL,hawks,Atlanta
+1610612738,Celtics,BOS,celtics,Boston
+1610612739,Cavaliers,CLE,cavaliers,Cleveland
+1610612740,Hornets,NOH,pelicans,New Orleans
+1610612741,Bulls,CHI,bulls,Chicago
+1610612742,Mavericks,DAL,mavericks,Dallas
+1610612743,Nuggets,DEN,nuggets,Denver
+1610612744,Warriors,GOS,warriors,Golden State
+1610612745,Rockets,HOU,rockets,Houston
+1610612746,Braves,BUF,clippers,Buffalo
+1610612747,Lakers,LAL,lakers,Los Angeles
+1610612748,Heat,MIA,heat,Miami
+1610612749,Bucks,MIL,bucks,Milwaukee
+1610612750,Timberwolves,MIN,timberwolves,Minnesota
+1610612751,Nets,BKN,nets,Brooklyn
+1610612752,Knicks,NYK,knicks,New York
+1610612753,Magic,ORL,magic,Orlando
+1610612754,Pacers,IND,pacers,Indiana
+1610612755,76ers,PHI,sixers,Philadelphia
+1610612756,Suns,PHX,suns,Phoenix
+1610612757,Trail Blazers,POR,blazers,Portland
+1610612758,Kings,CIN,kings,Cincinnati
+1610612759,Spurs,SAS,spurs,San Antonio
+1610612760,SuperSonics,OKC,thunder,Oklahoma City
+1610612761,Raptors,TOR,raptors,Toronto
+1610612762,Jazz,UTA,jazz,New Orleans
+1610612763,Grizzlies,MEM,grizzlies,Memphis
+1610612764,Bullets,BLT,wizards,Baltimore
+1610612765,Pistons,DET,pistons,Detroit
+1610612766,Bobcats,CHA,hornets,Charlotte
