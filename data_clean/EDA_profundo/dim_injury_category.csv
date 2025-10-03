@@ -1,0 +1,13 @@
+injury_category_id,injury_category
+1,Ankle
+2,Foot
+3,Arm
+4,Hand
+5,Back
+6,Head
+7,Illness
+8,Knee
+9,Muscular
+10,Other
+11,Surgery
+12,Unknown
