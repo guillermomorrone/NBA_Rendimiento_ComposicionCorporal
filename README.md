@@ -7,7 +7,6 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 
 <!-- Banner -->
 ![Banner del proyecto](docs/img/banner.png)  
-*(Banner con el título del proyecto + logos NBA/Orlando Magic. Tamaño recomendado: 1200×300 px)*
 
 
 
