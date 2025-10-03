@@ -133,8 +133,8 @@ La plataforma está construida en **Streamlit**, integrando diferentes bases de 
 ## 👥 Equipo
 
 - **Lorena Maza** https://www.linkedin.com/in/lorena-maza/
-- **Eliana Olmedo** 
-- **Guillermo Morrone** 
+- **Eliana Olmedo** https://www.linkedin.com/in/eliana-olmedo/
+- **Guillermo Morrone** https://www.linkedin.com/in/guillermo-morrone-7a04592a0/
 
 
 
