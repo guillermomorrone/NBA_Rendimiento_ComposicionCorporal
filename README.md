@@ -64,7 +64,7 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 /data_clean/EDA_profundo/ → datasets modelados (dim y fact)
 /sql/ → scripts SQL del modelo estrella
 /sql/keys/ → llaves PK/FK y constraints
-/notebooks/ → notebooks de limpieza y análisis, código de la app Streamlit.
+/notebooks/ → notebooks de limpieza y análisis.
 /dashboards_app/ → dashboard Power BI y capturas. Streamlit, app + modelos ML
 /docs/ → documentación del proyecto, diccionario de datos
 /docs/cleaning_reports/ → reportes de profiling y limpieza
