@@ -9,8 +9,6 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 ![Banner del proyecto](docs/img/banner.png)  
 
 
-
-
 ## 📌 Contexto
 **Cliente:** Departamento *Player Performance & Sports Science* de **Orlando Magic (NBA)**.  
 **Misión:** Optimizar el desarrollo físico, reducir el riesgo de lesiones y mejorar la preparación integral.
