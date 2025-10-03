@@ -7,7 +7,7 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 
 <!-- Banner -->
 ![Banner del proyecto](docs/img/banner.png)  
-*(Banner con el título del proyecto + logos NBA/Orlando Magic. Tamaño recomendado: 1200×300 px)*
+
 
 
 
@@ -47,11 +47,11 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
    - Relaciones PK/FK  
    - Script MER global  
 
-4. **Dashboard Power BI** (`/dashboards/`)  
+4. **Dashboard Power BI** (`/dashboards_app/`)  
    - KPIs de composición corporal, rendimiento y lesiones  
    - Filtros por equipo, temporada y posición  
 
-  **App en Streamlit** (`/app/`)  
+   **App en Streamlit**
    - Integración de datos SQL y CSV  
    - Modelos predictivos de lesiones y talento  
    - Validación de datasets y auditoría de información
