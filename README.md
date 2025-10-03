@@ -9,12 +9,11 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 ![Banner del proyecto](docs/img/banner.png)  
 
 
-
 ## 📌 Contexto
 **Cliente:** Departamento *Player Performance & Sports Science* de **Orlando Magic (NBA)**.  
 **Misión:** Optimizar el desarrollo físico, reducir el riesgo de lesiones y mejorar la preparación integral.
 
----
+
 
 ## 🎯 Objetivos
 - Identificar perfiles físicos óptimos por posición y estilo de juego.  
@@ -28,7 +27,7 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 ## 🔄 Pipeline de trabajo
 
 ![Pipeline de trabajo](docs/img/pipeline.png)  
-*(Flujo: `Datasets → Limpieza/Transformación → SQL Modelo Estrella → Dashboard Power BI + App Streamlit`)*
+*(Flujo: `Datasets → Limpieza/Transformación → SQL Modelo Estrella → Dashboard Power BI + Machine Learning`)*
 
 1. **Datasets originales** (`/data_raw/`)  
    - common_player_info  
@@ -46,16 +45,16 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
    - Relaciones PK/FK  
    - Script MER global  
 
-4. **Dashboard Power BI** (`/dashboards/`)  
+4. **Dashboard Power BI** (`/dashboards_app/`)  
    - KPIs de composición corporal, rendimiento y lesiones  
    - Filtros por equipo, temporada y posición  
 
-5. **App en Streamlit** (`/app/`)  
+   **App en Streamlit**
    - Integración de datos SQL y CSV  
    - Modelos predictivos de lesiones y talento  
    - Validación de datasets y auditoría de información
 
----
+
 
 ## 📂 Estructura del repositorio
 /data_raw/ → datasets originales
@@ -63,8 +62,8 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 /data_clean/EDA_profundo/ → datasets modelados (dim y fact)
 /sql/ → scripts SQL del modelo estrella
 /sql/keys/ → llaves PK/FK y constraints
-/notebooks/ → notebooks de limpieza y análisis, código de la app Streamlit.
-/dashboards/ → dashboard Power BI y capturas
+/notebooks/ → notebooks de limpieza y análisis.
+/dashboards_app/ → dashboard Power BI y capturas. Streamlit, app + modelos ML
 /docs/ → documentación del proyecto, diccionario de datos
 /docs/cleaning_reports/ → reportes de profiling y limpieza
 /docs/img/ → imágenes (banner, pipeline, MER, dashboard)
@@ -92,7 +91,7 @@ Análisis integral de la NBA para relacionar **composición corporal**, **rendim
 ![Modelo Estrella](docs/img/mer.png)  
 *(Diagrama estrella con dim_player, dim_team, dim_date, dim_season, fact_game, fact_player_stats, fact_combine, fact_injuries)*
 
----
+
 
 ## 📊 Dashboard Power BI
 
