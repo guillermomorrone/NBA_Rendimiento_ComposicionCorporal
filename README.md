@@ -2,144 +2,101 @@
 
 Proyecto colaborativo **LEG Analytics** – Data Analytics Bootcamp.  
 Análisis integral de la NBA para relacionar **composición corporal**, **rendimiento deportivo** y **lesiones**.
-
+**Autor:** Guillermo Morrone  
+**Rol:** Data Analyst  
+**Tecnologías:** Python · SQL · Power BI · 
 
 
 <!-- Banner -->
 ![Banner del proyecto](docs/img/banner.png)  
 
+---
 
-## 📌 Contexto
-**Cliente:** Departamento *Player Performance & Sports Science* de **Orlando Magic (NBA)**.  
-**Misión:** Optimizar el desarrollo físico, reducir el riesgo de lesiones y mejorar la preparación integral.
+## 🎯 Objetivo del Proyecto
+El propósito de este análisis fue **determinar si la composición corporal de los jugadores de la NBA influye en su rendimiento deportivo**, con el fin de **ayudar a los equipos en la toma de decisiones basadas en datos**.
 
+A partir del estudio de indicadores físicos y estadísticos (altura, peso, masa muscular, grasa corporal, puntos, asistencias, rebotes, etc.), desarrollamos un modelo que permite identificar patrones de desempeño y **predecir posibles talentos y riesgos de lesión**.
 
+---
 
-## 🎯 Objetivos
-- Identificar perfiles físicos óptimos por posición y estilo de juego.  
-- Relacionar composición corporal y morfología con rendimiento en cancha.  
-- Detectar métricas clave para anticipar desempeño.  
-- Predecir riesgos de lesiones mediante análisis de datos.  
-- Construir un dashboard y una app interactiva con KPIs clave para la toma de decisiones.
+## 🧠 Metodología de Análisis
 
+El proyecto se desarrolló en distintas etapas siguiendo el enfoque de un pipeline analítico completo:
 
+1. **Planificación y gestión del proyecto**  
+   - Uso de *Trello* para la división de tareas y control de avances.  
+   - Trabajo colaborativo con el equipo **LEGanalytics**.
 
-## 🔄 Pipeline de trabajo
+2. **Recolección y limpieza de datos**  
+   - Integración de datasets de composición corporal, rendimiento y lesiones.  
+   - Limpieza y normalización de variables con *Pandas* y *NumPy*.
 
-![Pipeline de trabajo](docs/img/pipeline.png)  
-*(Flujo: `Datasets → Limpieza/Transformación → SQL Modelo Estrella → Dashboard Power BI + Machine Learning`)*
+3. **Análisis exploratorio (EDA)**  
+   - Visualización de correlaciones y métricas clave en *Power BI* y *Matplotlib*.  
+   - Identificación de tendencias entre variables físicas y desempeño.
 
-1. **Datasets originales** (`/data_raw/`)  
-   - common_player_info  
-   - draft_combine_info  
-   - game_info  
-   - NBA_PLAYER_DATASET  
-   - NBA_Player_Injury  
+4. **Modelado predictivo (Machine Learning)**  
+   - Creación de dos modelos:
+     - 🔹 *Predicción de lesiones futuras*  
+     - 🔹 *Predicción de talento potencial*  
+   - Entrenamiento y evaluación con *Scikit-learn*.
 
-2. **Limpieza y transformación** (`/notebooks/` + `/docs/cleaning_reports/`)  
-   - Notebooks de limpieza (Python)  
-   - Reportes de documentación  
+5. **Despliegue e interacción**  
+   - Modelos implementados en *Streamlit*, permitiendo la exploración dinámica por parte del usuario.  
+   - Uso de *Google Cloud* para almacenamiento y conexión del flujo de datos.
 
-3. **Modelo Estrella en SQL Server** (`/sql/`)  
-   - Tablas `dim` y `fact`  
-   - Relaciones PK/FK  
-   - Script MER global  
+---
 
-4. **Dashboard Power BI** (`/dashboards_app/`)  
-   - KPIs de composición corporal, rendimiento y lesiones  
-   - Filtros por equipo, temporada y posición  
+## 📊 Principales Hallazgos
 
-   **App en Streamlit**
-   - Integración de datos SQL y CSV  
-   - Modelos predictivos de lesiones y talento  
-   - Validación de datasets y auditoría de información
+- Los jugadores con **mejor proporción de masa muscular y menor nivel de grasa corporal** tienden a mostrar **mejor rendimiento global** (puntos, rebotes, asistencias).  
+- Se observó una **relación directa entre carga física, edad y riesgo de lesión**.  
+- Las posiciones con mayor exposición física (pivots y forwards) mostraron patrones de riesgo diferentes al de los guards.  
+- Los modelos predictivos alcanzaron métricas satisfactorias, permitiendo estimar con precisión las probabilidades de lesión y el rendimiento proyectado.
 
+---
 
+## 🚀 Resultados Interactivos
 
-## 📂 Estructura del repositorio
-/data_raw/ → datasets originales
-/data_clean/EDA_exploratorio/ → datasets limpios iniciales
-/data_clean/EDA_profundo/ → datasets modelados (dim y fact)
-/sql/ → scripts SQL del modelo estrella
-/sql/keys/ → llaves PK/FK y constraints
-/notebooks/ → notebooks de limpieza y análisis.
-/dashboards_app/ → dashboard Power BI y capturas. Streamlit, app + modelos ML
-/docs/ → documentación del proyecto, diccionario de datos
-/docs/cleaning_reports/ → reportes de profiling y limpieza
-/docs/img/ → imágenes (banner, pipeline, MER, dashboard)
+Podés explorar los modelos y visualizar las predicciones en el panel desarrollado con **Streamlit**:  
+*(link al deploy si está disponible o “próximamente”)*
 
+---
 
+## 👥 Equipo de trabajo
 
-## 📑 Recursos principales
+Proyecto colaborativo desarrollado junto al equipo **LEGanalytics**, con roles divididos en:
+- Limpieza y preparación de datos  
+- Análisis estadístico  
+- Modelado predictivo  
+- Visualización e informes
 
-### 🧹 Limpieza de datos
-- [Notebooks de limpieza](./notebooks/)  
-- [Cleaning reports](./docs/cleaning_reports/)  
+---
 
-### 🗄️ Modelo Estrella (SQL)
-- [00_MER_DATABASE_ORLANDOMAGIC.sql](./sql/00_MER_DATABASE_ORLANDOMAGIC.sql)  
-- [01_dim_player_team.sql](./sql/01_dim_player_team.sql)  
-- [02_fact_combine.sql](./sql/02_fact_combine.sql)  
-- [03_fact_game.sql](./sql/03_fact_game.sql)  
-- [04_fact_injuries.sql](./sql/04_fact_injuries.sql)  
-- [05_fact_player_stats.sql](./sql/05_fact_player_stats.sql)  
-- [06_dim_date.sql](./sql/dim_date.sql)  
+## 🧩 Aportes personales
 
+En mi rol como **Data Analyst**, participé activamente en:
+- La **organización del Trello y estructura del proyecto**,  
+- La **creación y entrenamiento de los modelos predictivos** (lesiones y talentos),  
+- El **despliegue del modelo en Streamlit**,  
+- Y el **análisis visual y de insights en Power BI**.
 
-## 🗺 Modelo Estrella
+---
 
-![Modelo Estrella](docs/img/mer.png)  
-*(Diagrama estrella con dim_player, dim_team, dim_date, dim_season, fact_game, fact_player_stats, fact_combine, fact_injuries)*
+## 💡 Tecnologías y Librerías Utilizadas
 
+- **Lenguajes:** Python, SQL  
+- **Librerías:** Pandas, NumPy, Matplotlib, Scikit-learn, Seaborn, Streamlit  
+- **Herramientas:** Power BI, Google Cloud, Trello, VS Code, GitHub  
 
+---
 
-## 📊 Dashboard Power BI
+## 📫 Contacto
 
-![Dashboard - Overview](docs/img/dashboard_1.png)  
-*(KPIs principales: equipos, jugadores, temporadas. Promedio de peso y altura por posición)*
+- 💼 [LinkedIn – Guillermo Morrone](https://www.linkedin.com/in/guillermo-morrone)  
+- ✉️ [gvlmorrone@gmail.com](mailto:gvlmorrone@gmail.com)  
+- 🌍 [GitHub – guillermomorrone](https://github.com/guillermomorrone)  
 
-![Dashboard - Player Profile](docs/img/dashboard_2.png)  
-*(KPIs principales: Lesiones, frecuencia y recurrencia)*
+---
 
-![Dashboard - Tendencias](docs/img/dashboard_3.png)  
-*(KPIs principales: evolución temporal de altura, peso, masa grasa y masa muscular)*
-
-> ℹ️ Para ver el dashboard completo: [docs/dashboard_completo.pdf](docs/dashboard_completo.pdf)
-
-
-
-## 🌐 App en Streamlit
-La plataforma está construida en **Streamlit**, integrando diferentes bases de datos históricas y combinando estadísticas de juego, variables físicas y registros de lesiones. Convierte información dispersa en herramientas predictivas claras y visuales.
-
-![App - Talent Scout](docs/img/talent_scout.png)  
-*(Vista de la app Streamlit — sección **Talento**: ranking de jugadores con Talent Score para scouting)*
-
-
-### Secciones principales
-- **Home:** validación de carga de datasets para garantizar integridad de datos.  
-- **Lesiones:** modelo de clasificación con **probabilidad de lesión**. Umbral ajustable (threshold) que prioriza el *recall* para minimizar falsos negativos y prevenir lesiones.  
-- **Talento:** modelo de regresión que genera un **Talent Score**, ordenando jugadores según su potencial (ranking objetivo para scouting).  
-- **Data:** exploración y auditoría del dataset maestro, con filtros por temporada, posición o minutos jugados.  
-
-### Beneficios para Orlando Magic
-- Prevenir lesiones mediante la detección temprana de riesgos.  
-- Optimizar el scouting con un ranking claro de talentos emergentes.  
-- Tomar decisiones basadas en evidencia, combinando ciencia deportiva y análisis de datos.  
-
-
-
-## 👥 Equipo
-
-- **Lorena Maza** https://www.linkedin.com/in/lorena-maza/
-- **Eliana Olmedo** https://www.linkedin.com/in/eliana-olmedo/
-- **Guillermo Morrone** https://www.linkedin.com/in/guillermo-morrone-7a04592a0/
-
-
-
-## 📚 Referencias y licencia
-- Fórmula Deurenberg (1991) para estimación de % de masa grasa.  
-- Bibliografía y enlaces a datasets originales.  
-
-
-
-
+> *“Los datos cuentan historias. Yo me encargo de interpretarlas.”*
