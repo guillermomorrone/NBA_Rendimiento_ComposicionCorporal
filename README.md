@@ -2,6 +2,7 @@
 
 Proyecto colaborativo **LEG Analytics** – Data Analytics Bootcamp.  
 Análisis integral de la NBA para relacionar **composición corporal**, **rendimiento deportivo** y **lesiones**.
+
 **Autor:** Guillermo Morrone  
 **Rol:** Data Analyst  
 **Tecnologías:** Python · SQL · Power BI · 
